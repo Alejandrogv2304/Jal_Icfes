@@ -3,7 +3,7 @@ import { COLORS } from "../utils/styles";
 
  const messages = [
         'Ingresa a la página de inicio ⚛️',
-        'Dirigete a la sección de Areas y revisa 💼',
+        'Dirigete a la sección de Areas y revisa el contenido 💼',
         'Preparate con el contenido disponible 🫡',
         'Prueba tus conocimientos en simulacros🤑',
       ];
