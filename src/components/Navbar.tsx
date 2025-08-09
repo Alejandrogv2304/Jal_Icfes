@@ -1,6 +1,7 @@
 import  { useState } from 'react';
 import { IconDownload } from '@tabler/icons-react';
 import { COLORS } from '../utils/styles';
+import { Link } from 'react-router-dom';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -12,10 +13,10 @@ export default function Navbar() {
         
         <nav className='flex'>
             <ul className='text-white hidden lg:flex gap-4 '>
-                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' href="#skills">Inicio</a></li>
-                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110'href="#sobremi">Simulacros</a></li>
-                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' href="#proyectos">Areas</a></li>
-                <li><a className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' href="#contacto">Contenido</a></li>
+                <li><Link to="" className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' >Inicio</Link></li>
+                <li><Link to="/simulacros" className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' >Simulacros</Link></li>
+                <li><Link to="" className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' >Areas</Link></li>
+                <li><Link to="" className='inline-block px-2 py-1 hover:border-b-2 transform transition duration-200 hover:scale-110' >Contenido</Link></li>
             </ul>
         </nav>
 
@@ -38,10 +39,10 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className={`lg:hidden fixed inset-0 ${COLORS["primary"]} z-40 flex flex-col items-center justify-start space-y-6 mt-16`}>
             <ul className='text-center text-white space-y-6'>
-              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-700 hover:scale-110' href="#skills" onClick={() => setIsMenuOpen(false)}>Inicio</a></li>
-              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-700 hover:scale-110' href="#sobremi" onClick={() => setIsMenuOpen(false)}>Simulacros</a></li>
-              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-700 hover:scale-110' href="#proyectos" onClick={() => setIsMenuOpen(false)}>Areas</a></li>
-              <li><a className='hover:border-b-2 text-xl py-2 block transform transition duration-700 hover:scale-110' href="#contacto" onClick={() => setIsMenuOpen(false)}>Contenido</a></li>
+              <li><Link to="" className='hover:border-b-2 text-xl py-2 block transform transition duration-700 hover:scale-110'  onClick={() => setIsMenuOpen(false)}>Inicio</Link></li>
+              <li><Link to="" className='hover:border-b-2 text-xl py-2 block transform transition duration-700 hover:scale-110'  onClick={() => setIsMenuOpen(false)}>Simulacros</Link></li>
+              <li><Link to="" className='hover:border-b-2 text-xl py-2 block transform transition duration-700 hover:scale-110'  onClick={() => setIsMenuOpen(false)}>Areas</Link></li>
+              <li><Link to="" className='hover:border-b-2 text-xl py-2 block transform transition duration-700 hover:scale-110'  onClick={() => setIsMenuOpen(false)}>Contenido</Link></li>
             </ul>
             
             <a 
