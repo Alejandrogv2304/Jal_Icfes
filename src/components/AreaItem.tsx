@@ -18,13 +18,13 @@ export default function AreaItem({area}:AreaItemProps) {
     whileHover={{ scale: 1.05 }}
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: false, amount: 0.2 }}
+    viewport={{ once: true, amount: 0.1 }}
     transition={{ duration: 1, delay: 0.4 }}
     >
         <area.icono className='h-12 w-12 lg:h-24 lg:w-24 pb-4'/>
         <h2 className="pb-4 font-bold text-2xl">{area.nombre}</h2>
         <p className="opacity-70 pb-4 text-lg">{area.descripcion}</p>
-        <button className={` ${COLORS["secundary"]} rounded-md p-2 flex justify-center hover:bg-green-500 text-white font-semibold cursor-pointer`}>Iniciar</button>
+        <button className={`bg-black w-9/10 rounded-md p-2 flex justify-center hover:bg-gray-800 text-white font-semibold cursor-pointer`}>Iniciar</button>
       
     </motion.div>
   )
