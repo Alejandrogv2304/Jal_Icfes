@@ -7,11 +7,11 @@ import { COLORS } from "../utils/styles";
 
 export default function SimulacrosBox() {
     const areas = [
-        {nombre:"Mátemáticas", descripcion:"En esta area se evalua el razonamiento lógico-matemático, la resolución de problemas y aplicación de conceptos.", icono:SiLibreofficemath},
-        {nombre:"Lectura Crítica", descripcion:"Evalúa la capacidad de comprender, analizar y evaluar textos de diferentes tipos, aplicando y reconociendo conceptos.", icono:FaBookReader},
-        {nombre:"Inglés", descripcion:"Evalúa las habilidades de lectura, escritura, comprensión auditiva y expresión oral en la lengua extranjera inglés.", icono: FaLanguage},
-        {nombre:"Sociales y Ciudadanas", descripcion:"Aborda temas como la historia, la geografía, la Constitución Política y los derechos y deberes ciudadanos. ", icono:GoLaw},
-        {nombre:"Ciencias Naturales", descripcion:"Se centra en la comprensión de conceptos científicos, la aplicación del método científico y el análisis de fenómenos naturales", icono:MdOutlineScience}
+        {nombre:"Mátemáticas", descripcion:"En esta area se evalua el razonamiento lógico-matemático, la resolución de problemas y aplicación de conceptos.", icono:SiLibreofficemath, link:"matematicas"},
+        {nombre:"Lectura Crítica", descripcion:"Evalúa la capacidad de comprender, analizar y evaluar textos de diferentes tipos, aplicando y reconociendo conceptos.", icono:FaBookReader,link:"lectura"},
+        {nombre:"Inglés", descripcion:"Evalúa las habilidades de lectura, escritura, comprensión auditiva y expresión oral en la lengua extranjera inglés.", icono: FaLanguage, link:"ingles"},
+        {nombre:"Sociales y Ciudadanas", descripcion:"Aborda temas como la historia, la geografía, la Constitución Política y los derechos y deberes ciudadanos. ", icono:GoLaw, link:"sociales"},
+        {nombre:"Ciencias Naturales", descripcion:"Se centra en la comprensión de conceptos científicos, la aplicación del método científico y el análisis de fenómenos naturales", icono:MdOutlineScience,link:"naturales"}
     ]
   return (
     <>

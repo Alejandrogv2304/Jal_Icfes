@@ -1,13 +1,15 @@
 import type { IconType } from "react-icons"
 import { COLORS } from "../utils/styles"
 import {motion} from 'framer-motion'
+import { Link } from "react-router-dom"
 
 
 type AreaItemProps ={
 area:{
     nombre:string,
     descripcion:string,
-    icono:IconType
+    icono:IconType,
+    link:string
 }
 }
 
@@ -24,8 +26,10 @@ export default function AreaItem({area}:AreaItemProps) {
         <area.icono className='h-12 w-12 lg:h-24 lg:w-24 pb-4'/>
         <h2 className="pb-4 font-bold text-2xl">{area.nombre}</h2>
         <p className="opacity-70 pb-4 text-lg">{area.descripcion}</p>
+        <Link
+        to={`/simulacros/${area.link}`}>
         <button className={`bg-black w-9/10 rounded-md p-2 flex justify-center hover:bg-gray-800 text-white font-semibold cursor-pointer`}>Iniciar</button>
-      
+        </Link>
     </motion.div>
   )
 }
